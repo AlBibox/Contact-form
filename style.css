@@ -1,0 +1,141 @@
+
+html{box-sizing: border-box; overflow-x: hidden;
+    background: url("https://www.dropbox.com/s/y88e256s7hltomf/sfondo1.jpeg?raw=1") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+label, span{font-weight: bold; padding: 10px 58px; font-weight: bold; align-self: flex-start; font-size: 16px}
+input, select, option{font-family: 'Roboto', sans-serif; font-weight: 500; border-style: none; background: #D8CECE; text-indent: 8px; border-radius: 10px; font-size: 15px;}
+
+body{display: flex; justify-content: center; align-items: center; flex-direction: column; align-content: center;
+     font-family: 'Roboto', sans-serif; color: rgba(94, 167, 10, 1); overflow-x: hidden;
+}
+
+
+
+.form{background-color: rgba(0, 0, 0, 0.8); width: 80%; border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center ;margin: 30px 0}
+
+
+
+.form__namesurname,
+.form__mailnat,
+.form__birthsex{width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 2%;}
+.form__textbutton{width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 20px}
+.form__namesurname{margin-top: 20px}
+
+
+.form__namesurname .form__namesurname__name, .form__namesurname__surname{width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.form__namesurname input{padding: 10px 0; width: 80%; border-radius: 10px}
+
+.form__birthsex .form__birthsex__birthday, .form__birthsex__sex{width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+
+.form__birthsex__sex__radio{display: flex; justify-content: space-around; align-items: center; align-self: flex-start; margin-left: 70px}
+.form__birthsex__sex__radio input{height: 25px; width: 25px; border-style: none; border-radius: 100%;}
+.form__birthsex__sex__radio label{font-size: 14.5px; padding: 11px 70px 11px 40px}
+.form__birthsex__birthday input{padding: 7px 0px; width: 80%;}
+
+
+.form__mailnat .form__mailnat__mail, .form__mailnat__nat{width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.form__mailnat__nat select{padding: 8.5px 0px}
+.form__mailnat input, select{padding: 10px 0px; width: 80%;}
+
+
+.form__textbutton .form__textbutton__textarea, .form__textbutton__submit {width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+.form__textbutton__textarea{margin-bottom: 5%}
+.form__textbutton textarea{width: 90%; border-radius: 10px; padding: 10px 0px; height: 228px; background: #D8CECE; text-indent: 10px; resize: none; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 15px}
+
+.form__textbutton__submit input{background: #5EA70A; color: #fff; border: none; padding: 8px 20px; font-size: 18px; font-weight: bold; text-indent: inherit;}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 766.9px) {
+
+   label, span{ padding: 10px auto; margin: 0 auto}
+  html{height: 100%}
+  body{height: 100%; justify-content: flex-start;}
+  .form{width: 95%; margin: 10px 0}
+  .form__namesurname,
+  .form__mailnat,
+  .form__birthsex{width: 100%; flex-direction: column;}
+  .form__namesurname .form__namesurname__name, .form__namesurname__surname{width: 100%; margin-bottom: 5%}
+  .form__mailnat .form__mailnat__mail, .form__mailnat__nat{width: 100%; margin-bottom: 5%}
+  .form__birthsex .form__birthsex__birthday, .form__birthsex__sex{width: 100%; margin-bottom: 5%}
+
+
+  .form__birthsex__sex__radio{align-self: center; margin-left: inherit;}
+  .form__birthsex__sex__radio label{padding: 11px 20px 11px 20px}
+
+  .form__textbutton textarea{width: 80%}
+
+
+
+}
+
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  label, span{padding: 10px 50px; margin: 0 auto}
+  html{height: 100%}
+  body{height: 100%; justify-content: flex-start;}
+  .form{width: 96%;}
+  .form__birthsex__sex__radio{align-self: center; margin-left: inherit;}
+  .form__birthsex__sex__radio label{padding: 11px 20px 11px 20px}
+  .form__textbutton textarea{height: 100px}
+
+    .form__textbutton textarea{width: 90%}
+
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  label, span{padding: 10px 50px; margin: 0 auto}
+  html{height: 100%}
+  body{height: 100%}
+  .form{width: 96%; margin: 5px 0}
+  .form__namesurname,
+  .form__mailnat,
+  .form__birthsex{width: 100%; flex-direction: column;}
+  .form__namesurname .form__namesurname__name, .form__namesurname__surname{width: 100%; margin-bottom: 5%}
+  .form__mailnat .form__mailnat__mail, .form__mailnat__nat{width: 100%; margin-bottom: 5%}
+  .form__birthsex .form__birthsex__birthday, .form__birthsex__sex{width: 100%; margin-bottom: 5%}
+
+  .form__birthsex__sex__radio{align-self: center; margin-left: inherit;}
+  .form__birthsex__sex__radio label{padding: 11px 20px 11px 20px;}
+
+  .form__textbutton textarea{width: 80%}
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+
+label, span{padding: 10px 50px;}
+html{height: 100%}
+body{height: 100%;}
+.form{width: 95%; margin: 10px 0}
+.form__birthsex__sex__radio{margin-left: 55px}
+.form__birthsex__sex__radio label{padding: 11px 40px 11px 20px}
+
+}
+
+
+
+
+
+
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1366px) {
+.form{margin: 164px auto; width: 70%}
+
+}
